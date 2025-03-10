@@ -183,7 +183,7 @@ void CTeleprompterDlg::MyThreadProc()
 				unsigned char * buffer = vecMemBuffer[r];
 				for (int i = 0; i < 1024; i++)
 				{
-					memset(buffer+i*MEMRNDSIZE,rand()%255, MEMRNDSIZE);
+					memset(buffer+i*MEMRNDSIZE,rand()%256, MEMRNDSIZE);
 				}
 			}
 		}
